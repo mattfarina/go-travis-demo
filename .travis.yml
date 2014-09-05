@@ -9,6 +9,6 @@ deploy:
   password:
     secure: SXMqCnOeMGYDQrJPdbkoECBb7LVwbq85pmwh71wiGmMaP1iYWcllFW8nBsYwrzcS+8UCrOlPRgsPEHZfQojTtDqBQBvJ5Q7wobN1oPe5Gm5V0Bp4QEcAGqNhMiSJzHcn/M9W9Y0eRTNndHhI5YzsCeM6znfOyn9rf5jA0fV69UI=
   organization: HP
-  space: HP
+  space: HP --skip-ssl-validation
   on:
     repo: mattfarina/go-travis-demo
