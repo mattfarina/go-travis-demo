@@ -1,1 +1,1 @@
-web: bin/go-drone-demo
+web: bin/go-travis-demo
