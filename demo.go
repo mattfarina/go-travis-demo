@@ -7,7 +7,7 @@ import (
 )
 
 func getFormatString() string {
-	return "Hi there, I love %s!!"
+	return "Hi there, I love %s!"
 }
 
 func handler(w http.ResponseWriter, r *http.Request) {
