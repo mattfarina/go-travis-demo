@@ -1,14 +1,15 @@
 language: go
 go:
-- 1.3
+- 1.4
+- tip
 
 deploy:
   provider: cloudfoundry
-  api: https://api.15.126.241.232.xip.io/ --skip-ssl-validation
-  username: farina@hp.com
-  password:
-    secure: SXMqCnOeMGYDQrJPdbkoECBb7LVwbq85pmwh71wiGmMaP1iYWcllFW8nBsYwrzcS+8UCrOlPRgsPEHZfQojTtDqBQBvJ5Q7wobN1oPe5Gm5V0Bp4QEcAGqNhMiSJzHcn/M9W9Y0eRTNndHhI5YzsCeM6znfOyn9rf5jA0fV69UI=
+  api: https://api.api.15.126.206.171.xip.io/ --skip-ssl-validation
+  username: mattfarina
   organization: HP
   space: HP
   on:
     repo: mattfarina/go-travis-demo
+  password:
+    secure: Kgt+uIoBewxsA/AmTO1+yhvXWmGC5YaLrayZ+zGhUeUkM4oyvDDYTD2JM6hj46pM0jlLXV603vwbWOdtqzLtxHtYyaD0ngDZYfuzuGANXl4NZ3V5+rt5IeXUVXwL4uXhFMgPegixSecCoeziNvPn3DiRHMt7Wdq9AOfPo3scFtc=
