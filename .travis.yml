@@ -1,17 +1,14 @@
 language: go
 go:
 - 1.2
-
 deploy:
-  provider: cloudfoundry
-  api: https://api.api.15.126.206.171.xip.io/ --skip-ssl-validation
+  provider:
+    provider: cloudfoundry
+  api: 'https://api.15.126.206.171.xip.io/'
   username: mattfarina
+  password:
+    secure: RduXpAZyUVi10FRBQcU6XYFOzDLTsfBYs5lQ57SwMBfaM0IW32aEEMSfSt+L8J/TU7xaR5vTgj8SzT8k2oMDxLKzGWUYUoLAX8doPJ7hxQESjAoDA07m2I8FxEQHhw1eri/AEG0n0A069+W+FU+rogq2tUxp/df2dmeOPPc7IZ8=
   organization: HP
   space: HP
   on:
     repo: mattfarina/go-travis-demo
-  password:
-    secure: Kgt+uIoBewxsA/AmTO1+yhvXWmGC5YaLrayZ+zGhUeUkM4oyvDDYTD2JM6hj46pM0jlLXV603vwbWOdtqzLtxHtYyaD0ngDZYfuzuGANXl4NZ3V5+rt5IeXUVXwL4uXhFMgPegixSecCoeziNvPn3DiRHMt7Wdq9AOfPo3scFtc=
-
-after_deploy:
-  - cf restart go-travis-demo
