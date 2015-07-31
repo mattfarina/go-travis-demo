@@ -2,6 +2,7 @@ language: go
 go:
 - 1.2
 deploy:
+  edge: true
   provider:
     provider: cloudfoundry
   api: 'https://api.15.126.206.171.xip.io/'
@@ -10,5 +11,3 @@ deploy:
     secure: RduXpAZyUVi10FRBQcU6XYFOzDLTsfBYs5lQ57SwMBfaM0IW32aEEMSfSt+L8J/TU7xaR5vTgj8SzT8k2oMDxLKzGWUYUoLAX8doPJ7hxQESjAoDA07m2I8FxEQHhw1eri/AEG0n0A069+W+FU+rogq2tUxp/df2dmeOPPc7IZ8=
   organization: HP
   space: HP
-  on:
-    repo: mattfarina/go-travis-demo
