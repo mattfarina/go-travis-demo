@@ -14,4 +14,4 @@ deploy:
     secure: Kgt+uIoBewxsA/AmTO1+yhvXWmGC5YaLrayZ+zGhUeUkM4oyvDDYTD2JM6hj46pM0jlLXV603vwbWOdtqzLtxHtYyaD0ngDZYfuzuGANXl4NZ3V5+rt5IeXUVXwL4uXhFMgPegixSecCoeziNvPn3DiRHMt7Wdq9AOfPo3scFtc=
 
 after_deploy:
-  - cf restart
+  - cf restart go-travis-demo
