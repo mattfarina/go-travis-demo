@@ -3,8 +3,7 @@ go:
 - 1.2
 deploy:
   edge: true
-  provider:
-    provider: cloudfoundry
+  provider: cloudfoundry
   api: 'https://api.15.126.206.171.xip.io/'
   username: mattfarina
   password:
